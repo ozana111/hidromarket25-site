@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <% const title = t('meta.aboutTitle', { companyName: site.companyName }); %>
+  <% const description = t('meta.aboutDescription', { companyName: site.companyName }); %>
+  <title><%= title %></title>
+  <meta name="description" content="<%= description %>">
+  <%- include('partials/seo', { title, description }) %>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+
+  <section class="page-header">
+    <div class="container">
+      <h1><%= t('about.title') %></h1>
+    </div>
+  </section>
+
+  <section class="history-band">
+    <div class="container history-band-inner">
+      <div class="history-year"><%= site.founded %></div>
+      <div class="history-text">
+        <p class="hero-tagline"><%= t('about.historyTagline') %></p>
+        <h2><%= t('about.historyTitle', { year: site.founded }) %></h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container about-content">
+      <p><%- t('about.intro', { companyName: site.companyName, founded: site.founded, partner: '<strong>' + site.partner + '</strong>' }) %></p>
+
+      <div class="partner-badge partner-badge-lg">
+        <img src="/img/partners/hipomak-logo.png" alt="Hipomak Hydraulic — официальный логотип">
+        <span><%= t('about.partnerBadge') %></span>
+      </div>
+      <h3><%= t('about.whyUs') %></h3>
+      <ul class="check-list">
+        <li><%= t('about.list1') %></li>
+        <li><%= t('about.list2') %></li>
+        <li><%= t('about.list3') %></li>
+        <li><%= t('about.list4') %></li>
+      </ul>
+    </div>
+  </section>
+
+  <%- include('partials/footer') %>
+</body>
+</html>

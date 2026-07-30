@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "homeTitle": "{companyName} — auto parts, hydraulic systems, auto service",
+    "homeDescription": "{companyName} — sale of auto parts and hydraulic systems, auto service. Official Hipomak partner: pumps, hydraulic cylinders, PTO, hydraulic valves.",
+    "servicesTitle": "Services — {companyName}",
+    "servicesDescription": "{companyName} services: selection, supply, installation and maintenance of Hipomak hydraulic equipment.",
+    "catalogTitle": "Catalog — {companyName}",
+    "catalogDescription": "Hipomak hydraulic equipment catalog: pumps, hydraulic cylinders, PTO, valves, hydraulic motors.",
+    "aboutTitle": "About us — {companyName}",
+    "aboutDescription": "{companyName} — official Hipomak partner, hydraulic equipment supply.",
+    "contactsTitle": "Contacts — {companyName}",
+    "contactsDescription": "Contact {companyName} for hydraulic equipment supply and maintenance.",
+    "suppliersTitle": "Supplier catalog — {companyName}",
+    "suppliersDescription": "The full technical catalog of our suppliers: Hipomak, BAŞARAN, Danfoss.",
+    "notFoundTitle": "Page not found — {companyName}"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "catalog": "Catalog",
+    "about": "About us",
+    "contacts": "Contacts"
+  },
+  "search": { "placeholder": "Search catalog: pump, PTO, model…" },
+  "partner": { "badge": "Partner since {year}", "badgeSel": "SEL Hortumları distributor" },
+  "heroStats": {
+    "year": "founded in",
+    "products": "products in catalog",
+    "categories": "equipment categories"
+  },
+  "hero": {
+    "slide1": {
+      "tagline": "POWER · RELIABILITY · FAST DELIVERY",
+      "sub": "{activity}. Official {partner} partner — we supply and service hydraulic equipment for industrial, construction and agricultural machinery.",
+      "ctaPrimary": "View catalog",
+      "ctaSecondary": "Contact us"
+    },
+    "slide2": {
+      "tagline": "OFFICIAL PARTNER",
+      "title": "{partner} — since 1988",
+      "sub": "Only original equipment direct from the Turkish manufacturer: pumps, hydraulic cylinders, PTO, valves and related components.",
+      "ctaPrimary": "About company",
+      "ctaSecondary": "Catalog"
+    },
+    "slide3": {
+      "tagline": "AUTO PARTS AND SERVICE",
+      "title": "Full-cycle equipment maintenance",
+      "sub": "{companyName} has been operating in the Moldovan market since {founded}: auto parts, hydraulic systems and auto service, all in one place.",
+      "ctaPrimary": "Our services",
+      "ctaSecondary": "Contact us"
+    }
+  },
+  "home": {
+    "popularCategories": "Popular categories",
+    "wholeCatalog": "Full catalog →",
+    "supplierTitle": "Your reliable hydraulic equipment supplier",
+    "supplierText": "{companyName} works with industrial and agricultural machinery, supplying original {partner} hydraulic equipment and providing service support at every stage — from component selection to installation and maintenance.",
+    "moreAbout": "More about the company →",
+    "statOnMarket": "on the market since {year}",
+    "statOriginal": "Original",
+    "statOriginalDesc": "factory components only",
+    "statService": "Service",
+    "statServiceDesc": "selection, installation, support"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Full-cycle work with hydraulic equipment — from selection to service.",
+    "card1Title": "Equipment supply",
+    "card1Text": "Direct supply of {partner} pumps, hydraulic cylinders, PTO and valves for your project and timeline.",
+    "card2Title": "Component selection",
+    "card2Text": "We help you choose the right hydraulics for your specific machine and task — by parameters or by sample.",
+    "card3Title": "Installation and setup",
+    "card3Text": "We install and configure hydraulic systems at the customer's site or in our own workshop.",
+    "card4Title": "Service and repair",
+    "card4Text": "Diagnostics, repair and restoration of pumps and hydraulic cylinders, seal and repair kit replacement.",
+    "card5Title": "Spare parts supply",
+    "card5Text": "Original spare parts and consumables for {partner} equipment, in stock and to order.",
+    "card6Title": "Consulting",
+    "card6Text": "Technical consulting on the operation and maintenance of hydraulic equipment."
+  },
+  "about": {
+    "title": "About the company",
+    "intro": "{companyName} has been operating in the Moldovan market since {founded}. We sell auto parts and hydraulic systems, and also provide auto service. The company is the official partner of the Turkish hydraulic equipment manufacturer {partner}, operating since 1988. We supply pumps, hydraulic cylinders, power take-offs (PTO), hydraulic valves and related components for industrial, construction and agricultural machinery.",
+    "partnerBadge": "Official partner",
+    "historyTagline": "OUR HISTORY",
+    "historyTitle": "Since {year} — a reliable supplier of auto parts and hydraulic equipment",
+    "whyUs": "Why choose us",
+    "list1": "Original equipment direct from the manufacturer",
+    "list2": "Technical consulting and component selection",
+    "list3": "Installation, setup and maintenance",
+    "list4": "Spare parts and consumables in stock"
+  },
+  "catalog": {
+    "title": "Catalog",
+    "subtitle": "Use the search in the site header or the category filter below.",
+    "categoriesTitle": "Categories",
+    "allCategories": "All categories",
+    "noProducts": "There are no products in this category yet."
+  },
+  "product": {
+    "modelLabel": "model",
+    "priceLabel": "Price",
+    "cta": "Request price / order",
+    "relatedTitle": "Related products"
+  },
+  "contacts": {
+    "title": "Contacts",
+    "detailsTitle": "Details",
+    "phone": "Phone",
+    "servicePhone": "Service phone",
+    "phonePending": "to be confirmed",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "viber": "Viber",
+    "address": "Address",
+    "formTitle": "Write to us",
+    "name": "Name",
+    "message": "Message",
+    "submit": "Send",
+    "formOk": "Thank you! Your message has been sent, we'll get back to you.",
+    "formError": "Failed to send the message.",
+    "formConnError": "Connection error. Please try again later."
+  },
+  "footer": {
+    "partnerText": "Official partner of {partner} (Turkey) — hydraulic equipment supply.",
+    "sections": "Sections",
+    "contacts": "Contacts",
+    "social": "Follow us",
+    "rights": "All rights reserved."
+  },
+  "notFound": {
+    "title": "404",
+    "text": "Page not found.",
+    "back": "Back to home"
+  },
+  "catalogCategories": {
+    "hydraulicHoses": "Hydraulic hoses",
+    "gearPumps": "Gear pumps",
+    "pistonPumps": "Piston pumps",
+    "pto": "PTO (power take-offs)",
+    "valves": "Hydraulic valves and control blocks",
+    "cylinders": "Hydraulic cylinders",
+    "controls": "Joysticks and controls",
+    "cardanShafts": "Cardan shafts",
+    "oilCoolers": "Oil coolers",
+    "oilTanks": "Oil tanks",
+    "filters": "Return line filters",
+    "plates": "Mounting plates",
+    "flanges": "Flanges",
+    "couplings": "Couplings",
+    "adapters": "Adapters",
+    "connectors": "Connectors & fittings",
+    "mountingKits": "Mounting kits",
+    "serviceKits": "Service kits"
+  },
+  "site": {
+    "activity": "Sale of auto parts and hydraulic systems, auto service",
+    "address": "Chișinău, 1 Bucuriei St."
+  }
+}

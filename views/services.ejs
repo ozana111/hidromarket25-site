@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <% const title = t('meta.servicesTitle', { companyName: site.companyName }); %>
+  <% const description = t('meta.servicesDescription', { companyName: site.companyName }); %>
+  <title><%= title %></title>
+  <meta name="description" content="<%= description %>">
+  <%- include('partials/seo', { title, description }) %>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+
+  <section class="page-header">
+    <div class="container">
+      <h1><%= t('services.title') %></h1>
+      <p><%= t('services.subtitle') %></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container services-grid">
+      <div class="service-card">
+        <h3><%= t('services.card1Title') %></h3>
+        <p><%= t('services.card1Text', { partner: site.partner }) %></p>
+      </div>
+      <div class="service-card">
+        <h3><%= t('services.card2Title') %></h3>
+        <p><%= t('services.card2Text') %></p>
+      </div>
+      <div class="service-card">
+        <h3><%= t('services.card3Title') %></h3>
+        <p><%= t('services.card3Text') %></p>
+      </div>
+      <div class="service-card">
+        <h3><%= t('services.card4Title') %></h3>
+        <p><%= t('services.card4Text') %></p>
+      </div>
+      <div class="service-card">
+        <h3><%= t('services.card5Title') %></h3>
+        <p><%= t('services.card5Text', { partner: site.partner }) %></p>
+      </div>
+      <div class="service-card">
+        <h3><%= t('services.card6Title') %></h3>
+        <p><%= t('services.card6Text') %></p>
+      </div>
+    </div>
+  </section>
+
+  <%- include('partials/footer') %>
+</body>
+</html>

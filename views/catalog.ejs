@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <% const title = t('meta.catalogTitle', { companyName: site.companyName }); %>
+  <% const description = t('meta.catalogDescription'); %>
+  <title><%= title %></title>
+  <meta name="description" content="<%= description %>">
+  <%- include('partials/seo', { title, description }) %>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+
+  <section class="page-header">
+    <div class="container">
+      <h1><%= t('catalog.title') %></h1>
+      <p><%= t('catalog.subtitle') %></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container catalog-layout">
+      <aside class="catalog-filters">
+        <h4><%= t('catalog.categoriesTitle') %></h4>
+        <a href="/katalog" class="filter-link <%= !activeCategory ? 'active' : '' %>"><%= t('catalog.allCategories') %></a>
+        <% categories.forEach(function(c) { %>
+          <a href="/katalog?category=<%= encodeURIComponent(c) %>" class="filter-link <%= activeCategory === c ? 'active' : '' %>"><%= t('catalogCategories.' + c) %></a>
+        <% }); %>
+      </aside>
+
+      <div class="catalog-grid">
+        <% if (products.length === 0) { %>
+          <p><%= t('catalog.noProducts') %></p>
+        <% } %>
+        <% products.forEach(function(p) { %>
+          <a href="/katalog/<%= p.slug %>" class="product-card">
+            <img src="<%= p.image %>" alt="<%= p.name %>" loading="lazy">
+            <div class="product-card-body">
+              <span class="product-category"><%= t('catalogCategories.' + p.category) %></span>
+              <h3><%= p.name %></h3>
+              <span class="product-brand"><%= p.brand %> · <%= p.model %></span>
+            </div>
+          </a>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+
+  <%- include('partials/footer') %>
+</body>
+</html>

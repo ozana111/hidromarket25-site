@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "homeTitle": "{companyName} — piese auto, sisteme hidraulice, service auto",
+    "homeDescription": "{companyName} — vânzare de piese auto și sisteme hidraulice, service auto. Partener oficial Hipomak: pompe, cilindri hidraulici, PTO, distribuitoare hidraulice.",
+    "servicesTitle": "Servicii — {companyName}",
+    "servicesDescription": "Serviciile {companyName}: selecție, livrare, montaj și service pentru echipamente hidraulice Hipomak.",
+    "catalogTitle": "Catalog — {companyName}",
+    "catalogDescription": "Catalog de echipamente hidraulice Hipomak: pompe, cilindri hidraulici, PTO, distribuitoare, motoare hidraulice.",
+    "aboutTitle": "Despre noi — {companyName}",
+    "aboutDescription": "{companyName} — partener oficial Hipomak, livrare de echipamente hidraulice.",
+    "contactsTitle": "Contacte — {companyName}",
+    "contactsDescription": "Contactați {companyName} pentru livrarea și deservirea echipamentelor hidraulice.",
+    "suppliersTitle": "Catalog furnizori — {companyName}",
+    "suppliersDescription": "Catalogul tehnic complet al furnizorilor noștri: Hipomak, BAŞARAN, Danfoss.",
+    "notFoundTitle": "Pagina nu a fost găsită — {companyName}"
+  },
+  "nav": {
+    "home": "Acasă",
+    "services": "Servicii",
+    "catalog": "Catalog",
+    "about": "Despre noi",
+    "contacts": "Contacte"
+  },
+  "search": { "placeholder": "Căutare în catalog: pompă, PTO, model…" },
+  "partner": { "badge": "Partener din {year}", "badgeSel": "Distribuitor SEL Hortumları" },
+  "heroStats": {
+    "year": "anul înființării",
+    "products": "produse în catalog",
+    "categories": "categorii de echipamente"
+  },
+  "hero": {
+    "slide1": {
+      "tagline": "PUTERE · FIABILITATE · LIVRARE RAPIDĂ",
+      "sub": "{activity}. Partener oficial {partner} — livrăm și deservim echipamente hidraulice pentru utilaje industriale, de construcții și agricole.",
+      "ctaPrimary": "Vezi catalogul",
+      "ctaSecondary": "Contactează-ne"
+    },
+    "slide2": {
+      "tagline": "PARTENER OFICIAL",
+      "title": "{partner} — din 1988",
+      "sub": "Doar echipamente originale direct de la producătorul turc: pompe, cilindri hidraulici, PTO, distribuitoare și componente aferente.",
+      "ctaPrimary": "Despre companie",
+      "ctaSecondary": "Catalog"
+    },
+    "slide3": {
+      "tagline": "PIESE AUTO ȘI SERVICE",
+      "title": "Ciclu complet de deservire a utilajelor",
+      "sub": "{companyName} activează pe piața din Moldova din {founded}: vânzare de piese auto, sisteme hidraulice și servicii de service auto într-un singur loc.",
+      "ctaPrimary": "Serviciile noastre",
+      "ctaSecondary": "Contactează-ne"
+    }
+  },
+  "home": {
+    "popularCategories": "Categorii populare",
+    "wholeCatalog": "Tot catalogul →",
+    "supplierTitle": "Furnizorul dvs. de încredere de echipamente hidraulice",
+    "supplierText": "{companyName} lucrează cu utilaje industriale și agricole, livrând echipamente hidraulice originale {partner} și asigurând suport tehnic la toate etapele — de la selecția componentelor până la montaj și deservire.",
+    "moreAbout": "Mai multe despre companie →",
+    "statOnMarket": "pe piață din {year}",
+    "statOriginal": "Original",
+    "statOriginalDesc": "doar componente de fabrică",
+    "statService": "Service",
+    "statServiceDesc": "selecție, montaj, suport"
+  },
+  "services": {
+    "title": "Servicii",
+    "subtitle": "Ciclu complet de lucru cu echipamente hidraulice — de la selecție până la service.",
+    "card1Title": "Livrare de echipamente",
+    "card1Text": "Livrări directe de pompe, cilindri hidraulici, PTO și distribuitoare {partner} conform proiectului și termenelor dvs.",
+    "card2Title": "Selecția componentelor",
+    "card2Text": "Vă ajutăm să alegeți echipamentul hidraulic potrivit pentru utilajul și sarcina dvs. — după parametri sau după model.",
+    "card3Title": "Montaj și reglare",
+    "card3Text": "Instalăm și configurăm sisteme hidraulice la obiectul clientului sau în atelierul nostru.",
+    "card4Title": "Service și reparații",
+    "card4Text": "Diagnosticare, reparare și recondiționare a pompelor și cilindrilor hidraulici, înlocuirea garniturilor și seturilor de reparație.",
+    "card5Title": "Livrare de piese de schimb",
+    "card5Text": "Piese de schimb originale și consumabile pentru echipamentele {partner}, disponibile pe stoc și la comandă.",
+    "card6Title": "Consultanță",
+    "card6Text": "Consultanță tehnică privind exploatarea și deservirea echipamentelor hidraulice."
+  },
+  "about": {
+    "title": "Despre companie",
+    "intro": "{companyName} activează pe piața din Moldova din {founded}. Ne ocupăm de vânzarea pieselor auto și a sistemelor hidraulice, oferind și servicii de service auto. Compania este partener oficial al producătorului turc de echipamente hidraulice {partner}, activ din 1988. Livrăm pompe, cilindri hidraulici, prize de putere (PTO), distribuitoare hidraulice și componente aferente pentru utilaje industriale, de construcții și agricole.",
+    "partnerBadge": "Partener oficial",
+    "historyTagline": "ISTORICUL NOSTRU",
+    "historyTitle": "Din {year} — furnizor de încredere de piese auto și echipamente hidraulice",
+    "whyUs": "De ce ne aleg clienții",
+    "list1": "Echipamente originale direct de la producător",
+    "list2": "Consultanță tehnică și selecția componentelor",
+    "list3": "Montaj, reglare și service",
+    "list4": "Piese de schimb și consumabile disponibile"
+  },
+  "catalog": {
+    "title": "Catalog",
+    "subtitle": "Folosiți căutarea din antet sau filtrul pe categorii de mai jos.",
+    "categoriesTitle": "Categorii",
+    "allCategories": "Toate categoriile",
+    "noProducts": "Momentan nu există produse în această categorie."
+  },
+  "product": {
+    "modelLabel": "model",
+    "priceLabel": "Preț",
+    "cta": "Solicită preț / comandă",
+    "relatedTitle": "Produse similare"
+  },
+  "contacts": {
+    "title": "Contacte",
+    "detailsTitle": "Date de contact",
+    "phone": "Telefon",
+    "servicePhone": "Telefon service",
+    "phonePending": "se precizează",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "viber": "Viber",
+    "address": "Adresă",
+    "formTitle": "Scrie-ne",
+    "name": "Nume",
+    "message": "Mesaj",
+    "submit": "Trimite",
+    "formOk": "Mulțumim! Mesajul a fost trimis, vă vom contacta.",
+    "formError": "Mesajul nu a putut fi trimis.",
+    "formConnError": "Eroare de conexiune. Încercați mai târziu."
+  },
+  "footer": {
+    "partnerText": "Partener oficial al companiei {partner} (Turcia) — livrare de echipamente hidraulice.",
+    "sections": "Secțiuni",
+    "contacts": "Contacte",
+    "social": "Rețele sociale",
+    "rights": "Toate drepturile rezervate."
+  },
+  "notFound": {
+    "title": "404",
+    "text": "Pagina nu a fost găsită.",
+    "back": "Spre pagina principală"
+  },
+  "catalogCategories": {
+    "hydraulicHoses": "Furtunuri hidraulice",
+    "gearPumps": "Pompe cu roți dințate",
+    "pistonPumps": "Pompe cu piston",
+    "pto": "PTO (prize de putere)",
+    "valves": "Distribuitoare și supape hidraulice",
+    "cylinders": "Cilindri hidraulici",
+    "controls": "Joystick-uri și comenzi",
+    "cardanShafts": "Arbori cardanici",
+    "oilCoolers": "Radiatoare de ulei",
+    "oilTanks": "Rezervoare de ulei",
+    "filters": "Filtre de retur",
+    "plates": "Plăci de adaptare",
+    "flanges": "Flanșe",
+    "couplings": "Cuplaje",
+    "adapters": "Adaptoare",
+    "connectors": "Elemente de racordare",
+    "mountingKits": "Seturi de montaj",
+    "serviceKits": "Seturi de service"
+  },
+  "site": {
+    "activity": "Vânzare de piese auto și sisteme hidraulice, service auto",
+    "address": "mun. Chișinău, str. Bucuriei 1"
+  }
+}

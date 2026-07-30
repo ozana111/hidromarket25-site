@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <% const title = t('meta.contactsTitle', { companyName: site.companyName }); %>
+  <% const description = t('meta.contactsDescription', { companyName: site.companyName }); %>
+  <title><%= title %></title>
+  <meta name="description" content="<%= description %>">
+  <%- include('partials/seo', { title, description }) %>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+
+  <section class="page-header">
+    <div class="container">
+      <h1><%= t('contacts.title') %></h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contacts-layout">
+      <% const phoneDigits = site.phone.replace(/\D/g, ''); %>
+      <div class="contacts-info">
+        <h3><%= t('contacts.detailsTitle') %></h3>
+        <p><strong><%= t('contacts.phone') %>:</strong> <a href="tel:<%= site.phone.replace(/\s/g, '') %>"><%= site.phone %></a></p>
+        <p><strong><%= t('contacts.servicePhone') %>:</strong> <a href="tel:<%= site.servicePhone.replace(/\s/g, '') %>"><%= site.servicePhone %></a></p>
+        <p><strong><%= t('contacts.email') %>:</strong> <a href="mailto:<%= site.email %>"><%= site.email %></a></p>
+        <p><strong><%= t('contacts.whatsapp') %>:</strong> <a href="https://wa.me/<%= phoneDigits %>" target="_blank" rel="noopener"><%= site.phone %></a></p>
+        <p><strong><%= t('contacts.viber') %>:</strong> <a href="viber://chat?number=%2B<%= phoneDigits %>"><%= site.phone %></a></p>
+        <p><strong><%= t('contacts.address') %>:</strong> <%= t('site.address') %></p>
+        <div class="social-links">
+          <a href="<%= site.instagram %>" target="_blank" rel="noopener">Instagram</a>
+          <a href="<%= site.tiktok %>" target="_blank" rel="noopener">TikTok</a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contact-form"
+        data-msg-ok="<%= t('contacts.formOk') %>"
+        data-msg-error="<%= t('contacts.formError') %>"
+        data-msg-conn-error="<%= t('contacts.formConnError') %>">
+        <h3><%= t('contacts.formTitle') %></h3>
+        <label>
+          <%= t('contacts.name') %>
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          <%= t('contacts.phone') %>
+          <input type="tel" name="phone">
+        </label>
+        <label>
+          Email
+          <input type="email" name="email">
+        </label>
+        <label>
+          <%= t('contacts.message') %>
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary"><%= t('contacts.submit') %></button>
+        <p class="form-status" id="form-status" hidden></p>
+      </form>
+    </div>
+  </section>
+
+  <%- include('partials/footer') %>
+</body>
+</html>

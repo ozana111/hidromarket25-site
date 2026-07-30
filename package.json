@@ -1,0 +1,17 @@
+{
+  "name": "hidromarket25-site",
+  "version": "1.0.0",
+  "description": "Hidromarket 25 SRL - corporate website with catalog and live search",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.0"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}

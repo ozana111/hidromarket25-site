@@ -1,0 +1,21 @@
+<svg viewBox="0 0 365 90" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hidromarket 25 SRL">
+  <defs>
+    <clipPath id="h25-circle-clip">
+      <circle cx="44" cy="45" r="38"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#h25-circle-clip)">
+    <rect x="6" y="7" width="76" height="76" fill="#3d8fd1"/>
+    <polygon points="6,83 82,83 82,32" fill="#0e3d68"/>
+    <polygon points="30,7 82,7 82,55" fill="#ffffff" opacity="0.14"/>
+  </g>
+  <circle cx="44" cy="45" r="38" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.25"/>
+
+  <text x="44" y="60" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-style="italic" font-size="40" fill="#ffffff" text-anchor="middle">h</text>
+
+  <text x="100" y="50" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-style="italic" font-size="34">
+    <tspan fill="#e3342f">hidro</tspan><tspan fill="#ffffff">market</tspan><tspan fill="#e3342f">25</tspan>
+  </text>
+  <text x="101" y="70" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="12" letter-spacing="3" fill="#c9d8e6">AUTO &amp; HIDRAULIC&#258;</text>
+</svg>

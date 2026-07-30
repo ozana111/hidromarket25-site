@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <% const title = t('meta.homeTitle', { companyName: site.companyName }); %>
+  <% const description = t('meta.homeDescription', { companyName: site.companyName }); %>
+  <title><%= title %></title>
+  <meta name="description" content="<%= description %>">
+  <%- include('partials/seo', { title, description }) %>
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="application/ld+json"><%- JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'AutoPartsStore',
+    name: site.companyName,
+    url: site.baseUrl,
+    email: site.email,
+    telephone: site.phone,
+    foundingDate: String(site.founded),
+    description: t('site.activity'),
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: t('site.address'),
+      addressCountry: 'MD'
+    },
+    sameAs: [site.instagram, site.tiktok]
+  }) %></script>
+</head>
+<body>
+  <%- include('partials/header') %>
+
+  <section class="hero-slider" id="hero-slider">
+    <div class="hero-slide hero-slide-1 is-active">
+      <div class="container hero-inner">
+        <p class="hero-tagline"><%= t('hero.slide1.tagline') %></p>
+        <h1><%= site.companyName %></h1>
+        <p class="hero-sub"><%- t('hero.slide1.sub', { activity: t('site.activity'), partner: '<strong>' + site.partner + '</strong>' }) %></p>
+        <div class="hero-actions">
+          <a href="/katalog" class="btn btn-primary"><%= t('hero.slide1.ctaPrimary') %></a>
+          <a href="/kontakty" class="btn btn-outline"><%= t('hero.slide1.ctaSecondary') %></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide hero-slide-2">
+      <div class="container hero-inner">
+        <p class="hero-tagline"><%= t('hero.slide2.tagline') %></p>
+        <h1><%= t('hero.slide2.title', { partner: site.partner }) %></h1>
+        <p class="hero-sub"><%= t('hero.slide2.sub') %></p>
+        <div class="hero-actions">
+          <a href="/o-nas" class="btn btn-primary"><%= t('hero.slide2.ctaPrimary') %></a>
+          <a href="/katalog" class="btn btn-outline"><%= t('hero.slide2.ctaSecondary') %></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slide hero-slide-3">
+      <div class="container hero-inner">
+        <p class="hero-tagline"><%= t('hero.slide3.tagline') %></p>
+        <h1><%= t('hero.slide3.title') %></h1>
+        <p class="hero-sub"><%= t('hero.slide3.sub', { companyName: site.companyName, founded: site.founded }) %></p>
+        <div class="hero-actions">
+          <a href="/uslugi" class="btn btn-primary"><%= t('hero.slide3.ctaPrimary') %></a>
+          <a href="/kontakty" class="btn btn-outline"><%= t('hero.slide3.ctaSecondary') %></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <strong><%= site.founded %></strong>
+        <span><%= t('heroStats.year') %></span>
+      </div>
+      <div class="hero-stat">
+        <strong><%= totalProducts %>+</strong>
+        <span><%= t('heroStats.products') %></span>
+      </div>
+      <div class="hero-stat">
+        <strong><%= totalCategories %></strong>
+        <span><%= t('heroStats.categories') %></span>
+      </div>
+    </div>
+
+    <div class="hero-slide-number"><strong>01</strong>&nbsp;/&nbsp;03</div>
+
+    <div class="hero-dots">
+      <button class="hero-dot is-active" data-index="0" aria-label="1"></button>
+      <button class="hero-dot" data-index="1" aria-label="2"></button>
+      <button class="hero-dot" data-index="2" aria-label="3"></button>
+    </div>
+
+    <button class="hero-arrow hero-arrow-prev" aria-label="Prev">&#8249;</button>
+    <button class="hero-arrow hero-arrow-next" aria-label="Next">&#8250;</button>
+
+    <div class="hero-scroll-indicator"><span></span></div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title"><%= t('home.popularCategories') %></h2>
+      <div class="card-grid">
+        <% featured.forEach(function(p) { %>
+          <a href="/katalog/<%= p.slug %>" class="product-card">
+            <img src="<%= p.image %>" alt="<%= p.name %>" loading="lazy">
+            <div class="product-card-body">
+              <span class="product-category"><%= t('catalogCategories.' + p.category) %></span>
+              <h3><%= p.name %></h3>
+              <span class="product-brand"><%= p.brand %> · <%= p.model %></span>
+            </div>
+          </a>
+        <% }); %>
+      </div>
+      <div class="section-cta">
+        <a href="/katalog" class="btn btn-outline"><%= t('home.wholeCatalog') %></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container about-brief">
+      <div>
+        <h2 class="section-title"><%= t('home.supplierTitle') %></h2>
+        <p><%= t('home.supplierText', { companyName: site.companyName, partner: site.partner }) %></p>
+        <a href="/o-nas" class="link-arrow"><%= t('home.moreAbout') %></a>
+      </div>
+      <div class="stats">
+        <div class="stat"><strong><%= site.companyName %></strong><span><%= t('home.statOnMarket', { year: site.founded }) %></span></div>
+        <div class="stat"><strong><%= site.partner %></strong><span><%= t('home.statOnMarket', { year: 1988 }) %></span></div>
+        <div class="stat"><strong><%= t('home.statOriginal') %></strong><span><%= t('home.statOriginalDesc') %></span></div>
+        <div class="stat"><strong><%= t('home.statService') %></strong><span><%= t('home.statServiceDesc') %></span></div>
+      </div>
+    </div>
+  </section>
+
+  <%- include('partials/footer') %>
+</body>
+</html>

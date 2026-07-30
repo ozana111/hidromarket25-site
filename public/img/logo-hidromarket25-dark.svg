@@ -1,0 +1,19 @@
+<svg viewBox="0 0 300 84" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hidromarket 25 SRL">
+  <defs>
+    <linearGradient id="h25-circle-dark" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3d7fc4"/>
+      <stop offset="1" stop-color="#1a4d7a"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="42" cy="42" r="38" fill="url(#h25-circle-dark)"/>
+  <path d="M42 4 A38 38 0 0 1 78.9 40 L46 40 Z" fill="#f2a71b"/>
+  <text x="42" y="54" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="36" fill="#ffffff" text-anchor="middle">H</text>
+  <circle cx="70" cy="66" r="15" fill="#f2a71b" stroke="#0f3455" stroke-width="2.5"/>
+  <text x="70" y="71" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="13" fill="#1e2733" text-anchor="middle">25</text>
+
+  <text x="100" y="46" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="29">
+    <tspan fill="#ffffff">Hidro</tspan><tspan fill="#f2a71b">market</tspan>
+  </text>
+  <text x="101" y="65" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="12" letter-spacing="2" fill="#b7cbdd">25 &#183; SRL</text>
+</svg>

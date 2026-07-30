@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="<%= lang %>">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <% const title = t('meta.notFoundTitle', { companyName: site.companyName }); %>
+  <% const description = title; %>
+  <% const robots = 'noindex, follow'; %>
+  <title><%= title %></title>
+  <%- include('partials/seo', { title, description, robots }) %>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <%- include('partials/header') %>
+  <section class="section">
+    <div class="container" style="text-align:center; padding: 60px 0;">
+      <h1><%= t('notFound.title') %></h1>
+      <p><%= t('notFound.text') %></p>
+      <a href="/" class="btn btn-outline"><%= t('notFound.back') %></a>
+    </div>
+  </section>
+  <%- include('partials/footer') %>
+</body>
+</html>

@@ -1,0 +1,160 @@
+{
+  "meta": {
+    "homeTitle": "{companyName} — oto yedek parça, hidrolik sistemler, oto servis",
+    "homeDescription": "{companyName} — oto yedek parça ve hidrolik sistem satışı, oto servis. Hipomak'ın resmi partneri: pompalar, hidrolik silindirler, PTO, hidrolik valfler.",
+    "servicesTitle": "Hizmetler — {companyName}",
+    "servicesDescription": "{companyName} hizmetleri: Hipomak hidrolik ekipmanların seçimi, tedariki, montajı ve servis bakımı.",
+    "catalogTitle": "Katalog — {companyName}",
+    "catalogDescription": "Hipomak hidrolik ekipman kataloğu: pompalar, hidrolik silindirler, PTO, valfler, hidromotorlar.",
+    "aboutTitle": "Hakkımızda — {companyName}",
+    "aboutDescription": "{companyName} — Hipomak'ın resmi partneri, hidrolik ekipman tedariki.",
+    "contactsTitle": "İletişim — {companyName}",
+    "contactsDescription": "Hidrolik ekipman tedariki ve bakımı için {companyName} ile iletişime geçin.",
+    "suppliersTitle": "Tedarikçi kataloğu — {companyName}",
+    "suppliersDescription": "Tedarikçilerimizin tam teknik kataloğu: Hipomak, BAŞARAN, Danfoss.",
+    "notFoundTitle": "Sayfa bulunamadı — {companyName}"
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "services": "Hizmetler",
+    "catalog": "Katalog",
+    "about": "Hakkımızda",
+    "contacts": "İletişim"
+  },
+  "search": { "placeholder": "Katalogda ara: pompa, PTO, model…" },
+  "partner": { "badge": "{year} yılından beri partner", "badgeSel": "SEL Hortumları distribütörü" },
+  "heroStats": {
+    "year": "kuruluş yılı",
+    "products": "katalogdaki ürün",
+    "categories": "ekipman kategorisi"
+  },
+  "hero": {
+    "slide1": {
+      "tagline": "GÜÇ · GÜVENİLİRLİK · HIZLI TESLİMAT",
+      "sub": "{activity}. {partner} resmi partneri — endüstriyel, inşaat ve tarım makineleri için hidrolik ekipman tedarik ediyor ve bakımını yapıyoruz.",
+      "ctaPrimary": "Kataloğa göz atın",
+      "ctaSecondary": "Bize ulaşın"
+    },
+    "slide2": {
+      "tagline": "RESMİ PARTNER",
+      "title": "{partner} — 1988'den beri",
+      "sub": "Türk üreticiden doğrudan yalnızca orijinal ekipman: pompalar, hidrolik silindirler, PTO, valfler ve ilgili bileşenler.",
+      "ctaPrimary": "Şirket hakkında",
+      "ctaSecondary": "Katalog"
+    },
+    "slide3": {
+      "tagline": "OTO YEDEK PARÇA VE SERVİS",
+      "title": "Makine bakımında tam döngü",
+      "sub": "{companyName}, {founded} yılından beri Moldova pazarında faaliyet gösteriyor: oto yedek parça satışı, hidrolik sistemler ve oto servis hizmetleri tek bir yerde.",
+      "ctaPrimary": "Hizmetlerimiz",
+      "ctaSecondary": "Bize ulaşın"
+    }
+  },
+  "home": {
+    "popularCategories": "Popüler kategoriler",
+    "wholeCatalog": "Tüm katalog →",
+    "supplierTitle": "Güvenilir hidrolik ekipman tedarikçiniz",
+    "supplierText": "{companyName}, endüstriyel ve tarım makineleriyle çalışıyor, orijinal {partner} hidrolik ekipmanı tedarik ediyor ve bileşen seçiminden montaj ve bakıma kadar her aşamada destek sağlıyor.",
+    "moreAbout": "Şirket hakkında daha fazla →",
+    "statOnMarket": "{year} yılından beri pazarda",
+    "statOriginal": "Orijinal",
+    "statOriginalDesc": "yalnızca fabrika bileşenleri",
+    "statService": "Servis",
+    "statServiceDesc": "seçim, montaj, destek"
+  },
+  "services": {
+    "title": "Hizmetler",
+    "subtitle": "Seçimden servise kadar hidrolik ekipmanlarla tam çalışma döngüsü.",
+    "card1Title": "Ekipman tedariki",
+    "card1Text": "Projenize ve sürenize uygun olarak {partner} pompa, hidrolik silindir, PTO ve valflerin doğrudan tedariki.",
+    "card2Title": "Bileşen seçimi",
+    "card2Text": "Belirli makine ve göreve uygun hidrolik ekipmanı seçmenize yardımcı oluyoruz — parametrelere veya numuneye göre.",
+    "card3Title": "Montaj ve ayar",
+    "card3Text": "Hidrolik sistemleri müşterinin tesisinde veya kendi atölyemizde kuruyor ve ayarlıyoruz.",
+    "card4Title": "Servis ve onarım",
+    "card4Text": "Pompaların ve hidrolik silindirlerin arıza tespiti, onarımı ve yenilenmesi, conta ve tamir setlerinin değişimi.",
+    "card5Title": "Yedek parça tedariki",
+    "card5Text": "{partner} ekipmanları için orijinal yedek parçalar ve sarf malzemeleri stokta ve sipariş üzerine mevcut.",
+    "card6Title": "Danışmanlık",
+    "card6Text": "Hidrolik ekipmanların kullanımı ve bakımı hakkında teknik danışmanlık."
+  },
+  "about": {
+    "title": "Şirket hakkında",
+    "intro": "{companyName}, {founded} yılından beri Moldova pazarında faaliyet göstermektedir. Oto yedek parça ve hidrolik sistem satışı yapıyor, ayrıca oto servis hizmetleri sunuyoruz. Şirket, 1988'den beri faaliyet gösteren Türk hidrolik ekipman üreticisi {partner}'ın resmi partneridir. Endüstriyel, inşaat ve tarım makineleri için pompalar, hidrolik silindirler, kuyruk milleri (PTO), valfler ve ilgili bileşenler tedarik ediyoruz.",
+    "partnerBadge": "Resmi partner",
+    "historyTagline": "TARİHÇEMİZ",
+    "historyTitle": "{year} yılından beri güvenilir oto yedek parça ve hidrolik ekipman tedarikçisi",
+    "whyUs": "Neden bizi seçmeliler",
+    "list1": "Üreticiden doğrudan orijinal ekipman",
+    "list2": "Teknik danışmanlık ve bileşen seçimi",
+    "list3": "Montaj, ayar ve servis bakımı",
+    "list4": "Yedek parça ve sarf malzemesi bulunabilirliği"
+  },
+  "catalog": {
+    "title": "Katalog",
+    "subtitle": "Site başlığındaki aramayı veya aşağıdaki kategori filtresini kullanın.",
+    "categoriesTitle": "Kategoriler",
+    "allCategories": "Tüm kategoriler",
+    "noProducts": "Bu kategoride henüz ürün yok."
+  },
+  "product": {
+    "modelLabel": "model",
+    "priceLabel": "Fiyat",
+    "cta": "Fiyat sor / sipariş ver",
+    "relatedTitle": "Benzer ürünler"
+  },
+  "contacts": {
+    "title": "İletişim",
+    "detailsTitle": "İletişim bilgileri",
+    "phone": "Telefon",
+    "servicePhone": "Servis telefonu",
+    "phonePending": "belirtiliyor",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "viber": "Viber",
+    "address": "Adres",
+    "formTitle": "Bize yazın",
+    "name": "Ad",
+    "message": "Mesaj",
+    "submit": "Gönder",
+    "formOk": "Teşekkürler! Mesajınız gönderildi, sizinle iletişime geçeceğiz.",
+    "formError": "Mesaj gönderilemedi.",
+    "formConnError": "Bağlantı hatası. Lütfen daha sonra tekrar deneyin."
+  },
+  "footer": {
+    "partnerText": "{partner} (Türkiye) şirketinin resmi partneri — hidrolik ekipman tedariki.",
+    "sections": "Bölümler",
+    "contacts": "İletişim",
+    "social": "Sosyal medya",
+    "rights": "Tüm hakları saklıdır."
+  },
+  "notFound": {
+    "title": "404",
+    "text": "Sayfa bulunamadı.",
+    "back": "Ana sayfaya dön"
+  },
+  "catalogCategories": {
+    "hydraulicHoses": "Hidrolik hortumlar",
+    "gearPumps": "Dişli pompalar",
+    "pistonPumps": "Piston pompalar",
+    "pto": "PTO (kuyruk mili)",
+    "valves": "Hidrolik valfler ve kontrol blokları",
+    "cylinders": "Hidrolik silindirler",
+    "controls": "Joystick ve kontrolörler",
+    "cardanShafts": "Kardan milleri",
+    "oilCoolers": "Yağ soğutucular",
+    "oilTanks": "Yağ tankları",
+    "filters": "Dönüş filtreleri",
+    "plates": "Pleytler",
+    "flanges": "Flanşlar",
+    "couplings": "Kaplinler",
+    "adapters": "Adaptörler",
+    "connectors": "Bağlantı elemanları",
+    "mountingKits": "Montaj kitleri",
+    "serviceKits": "Servis kitleri"
+  },
+  "site": {
+    "activity": "Oto yedek parça ve hidrolik sistem satışı, oto servis",
+    "address": "Kişinev, Bucuriei Sok. No. 1"
+  }
+}

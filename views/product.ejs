@@ -23,7 +23,7 @@
         <h1><%= product.name %></h1>
         <p class="product-brand-line"><%= product.brand %> · <%= t('product.modelLabel') %> <%= product.model %></p>
         <p class="product-description"><%= product.description %></p>
-        <p class="product-price"><%= t('product.priceLabel') %>: <%= product.price %></p>
+        <p class="product-price"><%= t('product.priceLabel') %>: <%= product.price === 'по запросу' ? t('product.onRequest') : product.price %></p>
         <a href="/kontakty" class="btn btn-primary"><%= t('product.cta') %></a>
       </div>
     </div>

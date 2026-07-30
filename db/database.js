@@ -8,11 +8,17 @@ db.exec(`
   CREATE TABLE IF NOT EXISTS products (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT NOT NULL,
+    name_tr TEXT,
+    name_ro TEXT,
+    name_en TEXT,
     slug TEXT UNIQUE NOT NULL,
     brand TEXT NOT NULL,
     model TEXT NOT NULL,
     category TEXT NOT NULL,
     description TEXT,
+    description_tr TEXT,
+    description_ro TEXT,
+    description_en TEXT,
     price TEXT,
     image TEXT,
     search_text TEXT NOT NULL

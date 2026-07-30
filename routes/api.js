@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
 const db = require('../db/database');
+const { localizeProducts } = require('../lib/i18n');
 
 const searchStmt = db.prepare(`
-  SELECT id, name, slug, brand, model, category
+  SELECT id, name, name_tr, name_ro, name_en, slug, brand, model, category
   FROM products
   WHERE search_text LIKE @pattern
   ORDER BY
@@ -19,10 +20,13 @@ router.get('/search', (req, res) => {
     return res.json({ results: [] });
   }
 
-  const results = searchStmt.all({
-    pattern: `%${q}%`,
-    startPattern: `${q}%`
-  });
+  const results = localizeProducts(
+    searchStmt.all({
+      pattern: `%${q}%`,
+      startPattern: `${q}%`
+    }),
+    res.locals.lang
+  );
 
   res.json({ results });
 });

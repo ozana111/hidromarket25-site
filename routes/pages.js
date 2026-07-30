@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const db = require('../db/database');
+const { localizeProduct, localizeProducts } = require('../lib/i18n');
 
 const SITE = {
   companyName: 'Hidromarket 25 SRL',
@@ -58,7 +59,7 @@ router.get('/sitemap.xml', (req, res) => {
 });
 
 router.get('/', (req, res) => {
-  const featured = db.prepare('SELECT * FROM products ORDER BY RANDOM() LIMIT 6').all();
+  const featured = localizeProducts(db.prepare('SELECT * FROM products ORDER BY RANDOM() LIMIT 6').all(), res.locals.lang);
   const totalProducts = db.prepare('SELECT COUNT(*) AS c FROM products').get().c;
   const totalCategories = db.prepare('SELECT COUNT(DISTINCT category) AS c FROM products').get().c;
   res.render('index', { site: SITE, page: 'home', featured, totalProducts, totalCategories, canonicalPath: '/' });
@@ -76,12 +77,15 @@ router.get('/katalog', (req, res) => {
     .map((r) => r.category)
     .sort((a, b) => byCategoryOrder(a) - byCategoryOrder(b));
 
-  const products = categoryFilter
-    ? db.prepare('SELECT * FROM products WHERE category = ? ORDER BY name').all(categoryFilter)
-    : db
-        .prepare('SELECT * FROM products ORDER BY name')
-        .all()
-        .sort((a, b) => byCategoryOrder(a.category) - byCategoryOrder(b.category));
+  const products = localizeProducts(
+    categoryFilter
+      ? db.prepare('SELECT * FROM products WHERE category = ? ORDER BY name').all(categoryFilter)
+      : db
+          .prepare('SELECT * FROM products ORDER BY name')
+          .all()
+          .sort((a, b) => byCategoryOrder(a.category) - byCategoryOrder(b.category)),
+    res.locals.lang
+  );
 
   res.render('catalog', {
     site: SITE,
@@ -94,13 +98,15 @@ router.get('/katalog', (req, res) => {
 });
 
 router.get('/katalog/:slug', (req, res) => {
-  const product = db.prepare('SELECT * FROM products WHERE slug = ?').get(req.params.slug);
-  if (!product) {
+  const productRow = db.prepare('SELECT * FROM products WHERE slug = ?').get(req.params.slug);
+  if (!productRow) {
     return res.status(404).render('404', { site: SITE, page: '404', canonicalPath: req.path, robots: 'noindex, follow' });
   }
-  const related = db
+  const relatedRows = db
     .prepare('SELECT * FROM products WHERE category = ? AND id != ? LIMIT 4')
-    .all(product.category, product.id);
+    .all(productRow.category, productRow.id);
+  const product = localizeProduct(productRow, res.locals.lang);
+  const related = localizeProducts(relatedRows, res.locals.lang);
   res.render('product', { site: SITE, page: 'catalog', product, related, canonicalPath: `/katalog/${product.slug}` });
 });
 
